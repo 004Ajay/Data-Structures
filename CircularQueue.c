@@ -59,7 +59,7 @@ if (isEmpty()) {
 }
 
 void DISPLAY(){
-//To display stack elements
+//To display circular queue elements
 int i;
 if(isEmpty()){
    printf("Queue is Empty.\nProgram terminated!");

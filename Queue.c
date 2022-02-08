@@ -7,14 +7,14 @@
 
 int array[size], front = 0, rear = -1; //Global variable declaration
 
-bool isFull(){ //checks wheteher stack is full
+bool isFull(){ //checks wheteher Queue is full
 if(rear == (size - 1))
    return true;
 else
    return false;   
 }
 
-bool isEmpty(){ //checks wheteher stack is empty
+bool isEmpty(){ //checks wheteher Queue is empty
 if(rear < front)
    return true; //if top is at it's initial value, the fn. returns true
 else
@@ -33,7 +33,7 @@ else{
    rear += 1; //Incrementing rear
    printf("Enter element to be added: ");
    scanf("%d", &element); //Reading element
-   array[rear] = element; //Adding element to the top of stack   
+   array[rear] = element; //Adding element to the top of Queue  
     }
 }
 
@@ -51,7 +51,7 @@ else{
 }
 
 void DISPLAY(){
-//To display stack elements
+//To display Queue elements
 printf("DISPLAY selected\n");
 if(isEmpty()){
    printf("Queue is Empty.\nProgram terminated!");
@@ -59,7 +59,7 @@ if(isEmpty()){
 }
 else{
 for(int i = front; i <= rear; ++i) //if top == 0, we need to print that element. So, we put i <= top
-   printf("\nQueue element(s):  %d", array[i]); //showing the stack elements
+   printf("\nQueue element(s):  %d", array[i]); //showing the Queue elements
     }
 }
 

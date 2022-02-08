@@ -43,6 +43,7 @@ else{
 }
 }
 
+//Function to evaluate postfix expression
 void EvaPstExp(char PstExp[size]){
     int i, num1, num2, result, number;
 
@@ -51,27 +52,27 @@ for(i=0; PstExp[i] != '\0'; i++){
 switch(PstExp[i]){
       case'+':num1 = pop();
               num2 = pop();
-              push(num1 + num2);
+              push(num1 + num2); //Adding the popped elements
               break;
 
       case'-':num1 = pop();
               num2 = pop();
-              push(num1 - num2);
+              push(num1 - num2); //Subtracting the popped elements
               break;
 
       case'*':num1 = pop();
               num2 = pop();
-              push(num1 * num2);
+              push(num1 * num2); //Multiplying the popped elements
               break;
 
       case'/':num1 = pop();
               num2 = pop();
-              push(num1 / num2);
+              push(num1 / num2); //Dividing the popped elements
               break;
 
       case'^':num1 = pop();
               num2 = pop();
-              push(num1 ^ num2);
+              push(num1 ^ num2); //Powering the popped elements
               break;        
 
       default:
@@ -84,6 +85,7 @@ switch(PstExp[i]){
 printf("\nResult: %d\n", array[top]);
 }
 
+//Main Fuction
 int main(){
 int choice;  
 char PstExp[size], option;
