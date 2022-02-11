@@ -6,8 +6,28 @@ Data Structures are a specialized means of organizing and storing data in comput
 
 Types of DS are Arrays, Stacks, Queue, LinkedList, Trees, Heaps, Hash Tables & Graphs
 
-[HelloWorld](https://github.com/004Ajay/Java/tree/main/To%20complete)
+---
 
-[Hello](https://github.com/004Ajay/Data-Structures)
+### List of Programs with their Links:
 
-[World](https://github.com/004Ajay/Data-Structures/blob/main/ReverseUsingStack.c)
+[Binary Search](https://github.com/004Ajay/Data-Structures/blob/main/BinarySearch.c)
+
+[Stack Operations](https://github.com/004Ajay/Data-Structures/blob/main/Stack.c)
+
+[Queue Operations](https://github.com/004Ajay/Data-Structures/blob/main/Queue.c)
+
+[Reverse Using Stack](https://github.com/004Ajay/Data-Structures/blob/main/ReverseUsingStack.c)
+
+[Linked List Operations](https://github.com/004Ajay/Data-Structures/blob/main/LinkedList.c)
+
+[Circular Queue Operations](https://github.com/004Ajay/Data-Structures/blob/main/CircularQueue.c)
+
+[Evaluation Of Postfix Expression](https://github.com/004Ajay/Data-Structures/blob/main/EvaluationOfPostfixExpression.c)
+
+[Infix Expression To Postfix Expression](https://github.com/004Ajay/Data-Structures/blob/main/InfixToPostfix.c)
+
+
+
+
+
+
