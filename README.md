@@ -8,7 +8,7 @@ Types of DS are Arrays, Stacks, Queue, LinkedList, Trees, Heaps, Hash Tables & G
 
 ---
 
-### List of Programs with their Links:
+### List of Programs in this repository with their Links:
 
 [Binary Search](https://github.com/004Ajay/Data-Structures/blob/main/BinarySearch.c)
 
