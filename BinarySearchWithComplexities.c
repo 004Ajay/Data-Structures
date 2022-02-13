@@ -1,4 +1,4 @@
-//C Program to do Binary Search
+//C Program to do Binary Search with Space & Time Complexity
 
 
 #include<stdio.h>
@@ -9,6 +9,7 @@ char choice; //1 space
 times += 10;
 space = 77; //space = (10 * 4) + (9 * 4 = 36) + 1
 
+do{
 //getting array size
 printf("Enter array limit(max 10): ");
 scanf("%d", &limit);
@@ -23,7 +24,7 @@ for(i=0; i<limit; i++){
 }
 times = times + 1; //for false iteration of for loop
 
-do{
+
 //getting search key
 printf("Enter search key: ");
 scanf("%d", &key);
@@ -69,6 +70,6 @@ times += 2;
 }while(choice == 'S' || choice == 's');
 
 times += 2; //for next printfs
-printf("Time complexity is  %d\n", times);
+printf("Exited!\nTime complexity is  %d\n", times);
 printf("Space complexity is  %d\n", space);
 }
