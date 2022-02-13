@@ -44,7 +44,7 @@ times ++; //1 false iteration of for loop
 
 printf("\nEnter Your Choice \nFor SEARCHING Type s \nFor EXIT, press any key\nChoice: ");
 scanf(" %c", &choice);
-times += 2;
+times += 3; // for running or failing of do while loop
 }while(choice == 'S' || choice == 's');
 
 times += 2; //for next printfs

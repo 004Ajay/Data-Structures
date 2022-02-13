@@ -66,7 +66,7 @@ times += 2;
 
 printf("\nEnter Your Choice \nFor SEARCHING Type s \nFor EXIT, press any letter\nChoice: ");
 scanf(" %c", &choice);
-times += 2;
+times += 3;// for running or failing of do while loop
 }while(choice == 'S' || choice == 's');
 
 times += 2; //for next printfs
