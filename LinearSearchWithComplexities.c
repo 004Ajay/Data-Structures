@@ -19,7 +19,7 @@ printf("Enter array elements:\n");
 for(i=0; i<limit; i++){
     printf("Element %d: ", i+1);
     scanf("%d", &array[i]);
-    times++;
+    times += 3;
 }
 times += 2; //for printf in line19 & 1 false iteration of for loop
 
@@ -34,7 +34,7 @@ for(i=0; i<limit; i++){
        printf("Element %d is found at position %d\n", key, i+1);
        break;
    }
-   times ++; //for loop running time    
+   times += 3; //for loop running time    
 }
 times ++; //1 false iteration of for loop
 
