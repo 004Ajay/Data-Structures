@@ -7,7 +7,7 @@ char choice;//1 space
 times += 10;
 space = 69; //space = [(10 * 4) + (7 * 4) + 1] = 69
 
-do{ //Do While loop to restart SEARCHING
+do{ //do while loop to restart SEARCHING
 
 //getting array size
 printf("Enter array limit: ");
