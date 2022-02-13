@@ -29,14 +29,16 @@ scanf("%d", &key);
 times += 2;
 
 for(i=0; i<limit; i++){
-   if(array[i] == key) //If search element = array element, returns True
+
+   if(array[i] == key){ //If search element = array element, returns True
        printf("Element %d is found at position %d\n", key, i+1);
+       break;
+   }
    times ++; //for loop running time    
-   break;    
 }
 times ++; //1 false iteration of for loop
 
-   if(key > limit) //If search element is out of scope, return True
+   if(i == limit)
      printf("Element %d is not found on the list\n", key);
    times += 2; //for if & printf
 
