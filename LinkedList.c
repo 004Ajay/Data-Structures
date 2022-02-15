@@ -1,4 +1,5 @@
 // C program to implement operations on LinkedList
+//refer rough1
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -44,8 +45,13 @@ void Insert_End(){
         if(NoList()) exit (0);
 
         else{
-                printf("Enter data to add: ");
-                scanf("%d", &item);
+            printf("Enter data to add: ");
+            scanf("%d", &item);
+            while(ptr->link!=NULL)
+                ptr =ptr->link;
+            ptr -> link = temp;
+            temp -> data = item;
+            temp->link=NULL;
             }    
 
 }
@@ -53,20 +59,31 @@ void Insert_End(){
 //Function to Insert node at any position
 void Insert_AnyPos(){
 
+        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
+        struct node* temp = (struct node*)malloc(sizeof(struct node*));
+
 }
 
 //Function to Delete node at beginning
 void Delete_Begin(){
+
+        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
 
 }
 
 //Function to Delete node at end
 void Delete_End(){
 
+        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
+        struct node* temp = (struct node*)malloc(sizeof(struct node*));
+
 }
 
 //Function to Delete node at any position
 void Delete_AnyPos(){
+
+        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
+        struct node* temp = (struct node*)malloc(sizeof(struct node*));
 
 }
 
