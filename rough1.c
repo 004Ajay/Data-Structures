@@ -1,3 +1,6 @@
+/*JAYASANKAR SHYAM
+ROLL NO : 40
+S3 AD*/
 #include <stdio.h>
 #include<stdlib.h>
 struct node
@@ -163,8 +166,7 @@ void delete()
              break;
           default:printf("invalid input\n");
         }
-
-    }
+        }
 }
 void  display()
 {
@@ -188,24 +190,52 @@ void  display()
    else
         printf("list is empty\n");
 }
-int main()
-{
-  int s=0;
-  while(1)
-   {
-     printf("1:insertion\n2:deletion\n3:display\n4:exit\n");
-     scanf("%d",&s);
-     switch(s)
-      {
-        case 1:insertion();
-               break;
-        case 2:delete();
-               break;
-        case 3:display();
-               break;
-        case 4:exit(0);
-      }
-    }
+int main(){
+int choice;
+char option;
 
-   return 0;
+do{
+
+printf("LinkedList Operations\n1. Insertion at beginning\n2. Insertion at end\n3. Insertion at any position\n4. Deletion at beginning\n5. Deletion at end\n6. Deletion at any position\n7. Display(Travesing)\n8. Exit\nChoice: ");
+scanf("%d", &choice);
+
+switch(choice){
+    case 1: 
+            Insert_Begin();
+            break;
+
+    case 2: 
+            Insert_End();
+            break;
+
+    case 3:
+            Insert_AnyPos;
+            break;
+
+    case 4:  
+            Delete_Begin();
+            break;
+
+    case 5:  
+            Delete_End();
+            break;
+
+    case 6:
+            Delete_AnyPos();
+            break;
+
+    case 7: 
+            Traverse();
+            break; 
+
+    case 8: printf("Exited!");
+            exit(0); 
+
+    default: printf("Wrong Choice!");
+             break;
+            }
+printf("\nDo you want to continue? y/n\nChoice: ");
+scanf(" %c", &option);
+}while(option == 'Y' || option == 'y');        
+    return 0;
 }

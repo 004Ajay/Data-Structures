@@ -1,144 +1,231 @@
-// C program to implement operations on LinkedList
-//refer rough1
+//C program to implement operations on LinkedList
 
-#include<stdio.h>
+#include <stdio.h>
 #include<stdlib.h>
 
 struct node{
-  int data;
-  struct node *link;
+int val;
+struct node *link;
 };
 
-struct node *head = NULL;
-//struct node *current = NULL;
+struct node*head;int value;
 
-//Function to check list is empty
-int NoList(){
-        struct node* temp = (struct node*)malloc(sizeof(struct node*));
-        if(temp == NULL){ print("Memory Underflow"); return -1; } //no list
-        else return 0; //list exists
+void Insert_Begin(){
+
+  struct node *ptr = (struct node*)malloc(sizeof(struct node));
+  struct node *temp = (struct node*)malloc(sizeof(struct node));
+
+  printf("Enter the element to insert: ");
+  scanf("%d",&value);
+
+  temp->val = value;
+  temp->link = head;
+  head = temp;
 }
 
-//Function to Insert node at beginning
-void Insert_Begin(){
-        int item;
-        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
-        struct node* temp = (struct node*)malloc(sizeof(struct node*));
+void Insert_End(){
 
-        if(NoList()) exit (0);
+    struct node *ptr = (struct node*)malloc(sizeof(struct node));
+    struct node *temp = (struct node*)malloc(sizeof(struct node));
 
-        else{
-                printf("Enter data to add: ");
-                scanf("%d", &item);
-                temp -> data = item; //assigning item to data
-                temp -> link = head; 
-                head = temp;
+    printf("Enter the element to insert: ");
+    scanf("%d",&value);
+
+    ptr=head;
+
+    while(ptr->link!=NULL) ptr=ptr->link;
+
+    ptr->link = temp;
+    temp->val = value;
+    temp->link = NULL;
+}
+
+void Insert_AnyPos(){
+
+    int key;
+
+    struct node *ptr = (struct node*)malloc(sizeof(struct node));
+    struct node *temp = (struct node*)malloc(sizeof(struct node));
+
+    printf("Enter the element to insert: ");
+    scanf("%d", &value);
+
+    printf("Enter position: ");
+    scanf("%d", &key);
+
+    ptr = head;
+
+    while((ptr->val != key) && (ptr->link != NULL)) ptr=ptr->link;
+
+    if(ptr->val == key){
+        temp->link = ptr->link;
+        ptr->link = temp;
+        temp->val = value;
+      }
+
+    else printf("Value not found\n");
+}
+
+void Delete_Begin(){
+
+    struct node *ptr = (struct node*)malloc(sizeof(struct node));
+
+    ptr = head;
+    head = ptr->link;
+    free(ptr);
+
+}
+
+void Delete_End(){
+
+    struct node *ptr = (struct node*)malloc(sizeof(struct node));
+    struct node *temp = (struct node*)malloc(sizeof(struct node));
+
+    if(head == NULL) printf("\nMemory Underflow\n");
+    else{
+        ptr = head;
+        while(ptr->link != NULL){
+          temp = ptr;
+          ptr = ptr->link;
+        }
+        temp->link = NULL;
+        free(ptr);
+    }
+}
+
+void Delete_AnyPos(){
+
+    int key;
+
+    struct node *ptr = (struct node*)malloc(sizeof(struct node));
+    struct node *temp = (struct node*)malloc(sizeof(struct node));
+
+    printf("Enter position: ");
+    scanf("%d",&key);
+
+    ptr=head;
+
+    if(head == NULL) printf("\nMemory Underflow\n");
+    while(ptr!=NULL){
+        temp=ptr;
+        ptr=ptr->link;
+        if(temp->val==key){
+          temp->link=ptr->link;
+          free(ptr);
+          break;
+          }
+    }
+}
+
+void Insertion(){
+   int s;
+
+   struct node *ptr = (struct node*)malloc(sizeof(struct node));
+
+    
+   if(ptr == NULL) printf("\nMemory Overflow\n");
+
+   else{
+        printf("\nSelect Position\n1: Front\n2: End\n3: Between Nodes\nChoice: ");
+        scanf("%d", &s);
+        switch(s){
+          case 1:
+                 Insert_Begin();
+                 break;
+          case 2:
+                 Insert_End();
+                 break;
+          case 3:
+                 Insert_AnyPos();
+                 break;
+          default:printf("Wrong Input\n");
+        }
+    }
+}
+
+void Deletion(){
+
+    int key, s=1;
+
+    struct node *temp = (struct node*)malloc(sizeof(struct node));
+    struct node *ptr = (struct node*)malloc(sizeof(struct node));
+
+    if(head== NULL) printf("\nunderflow\n");
+    
+    else{
+        printf("\nSelect Position\n1: Front\n2: End\n3: Between Nodes\nChoice: ");
+        scanf("%d", &s);
+
+        switch(s){
+          case 1:
+                 Delete_Begin();
+                 break;
+          case 2:
+                 Delete_End();
+                 break;
+          case 3:
+                 Delete_AnyPos();
+                 break;
+          default:printf("Wrong Input\n");
+        }
         }
 }
 
-//Function to Insert node at end
-void Insert_End(){
-        int item;
-        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
-        struct node* temp = (struct node*)malloc(sizeof(struct node*));
+void Display(){
 
-        if(NoList()) exit (0);
+    struct node *ptr= (struct node*)malloc(sizeof(struct node));
 
-        else{
-            printf("Enter data to add: ");
-            scanf("%d", &item);
-            while(ptr->link!=NULL)
-                ptr =ptr->link;
-            ptr -> link = temp;
-            temp -> data = item;
-            temp->link=NULL;
-            }    
+    ptr=head;
 
-}
+    if(head!=NULL){
+     printf("\nList Elements: ");
+    
+     while(ptr != NULL){
+        if(ptr->link == NULL){
+          printf("%d ", ptr->val);
+          break;
+        }
+        printf("%d ", ptr->val);
+        ptr=ptr->link;
+       }
+     printf("\n");
+    }
 
-//Function to Insert node at any position
-void Insert_AnyPos(){
-
-        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
-        struct node* temp = (struct node*)malloc(sizeof(struct node*));
-
-}
-
-//Function to Delete node at beginning
-void Delete_Begin(){
-
-        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
-
-}
-
-//Function to Delete node at end
-void Delete_End(){
-
-        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
-        struct node* temp = (struct node*)malloc(sizeof(struct node*));
-
-}
-
-//Function to Delete node at any position
-void Delete_AnyPos(){
-
-        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
-        struct node* temp = (struct node*)malloc(sizeof(struct node*));
-
-}
-
-//Function to Display(Travese) the list
-void Traverse(){
-        struct node* ptr = (struct node*)malloc(sizeof(struct node*));
-        ptr = head;
-        while(ptr != NULL)
-             printf("%d", ptr -> data);
-        ptr = ptr -> link;    
+   else printf("List is empty\n");
 }
 
 
-//Main Function
 int main(){
-int choice;
+  int s=0;
+  char option;
 
-printf("LinkedList Operations\n1. Insertion at beginning\n2. Insertion at end\n3. Insertion at any position\n4. Deletion at beginning\n5. Deletion at end\n6. Deletion at any position\n7. Display(Travesing)\n8. Exit\nChoice: ");
-scanf("%d", &choice);
+  do{
+     printf("\n1: Insertion\n2: Deletion\n3: Display\n4: Exit\nChoice: ");
+     scanf("%d", &s);
+     switch(s){
+        case 1:
+              Insertion();
+              break;
 
-switch(choice){
-    case 1: printf("Insertion at beginning selected");
-            Insert_Begin();
-            break;
+        case 2:
+              Deletion();
+              break;
 
-    case 2: printf("Insertion at end selected");
-            Insert_End();
-            break;
+        case 3:
+              Display();
+              break;
 
-    case 3: printf("Insertion at any position selected");
-            Insert_AnyPos;
-            break;
+        case 4:
+              printf("Exited!");
+              exit(0);
 
-    case 4: printf("Deletion at beginning selected");
-            Delete_Begin();
-            break;
-
-    case 5: printf("Deletion at end selected");
-            Delete_End();
-            break;
-
-    case 6: printf("Deletion at any position selected");
-            Delete_AnyPos();
-            break;
-
-    case 7: printf("Showing the List");
-            Traverse();
-            break; 
-
-    case 8: printf("Exited!");
-            exit(0); 
-
-    default: printf("Wrong Choice!");
-             break;
-            }
-
-    return 0;
+        default: printf("Wrong Choice!");
+                 break;       
+      }
+printf("\nDo you want to continue? y/n\nChoice: ");
+scanf(" %c", &option);
+}while(option == 'Y' || option == 'y');
+printf("Exited!");  
+exit(0);
+return 0;
 }
