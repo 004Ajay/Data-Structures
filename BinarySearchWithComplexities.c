@@ -1,6 +1,5 @@
 //C Program to do Binary Search with Space & Time Complexity
 
-
 #include<stdio.h>
 
 int main(){
