@@ -6,6 +6,7 @@ int main(){
   space = 64; //(4*10) - for array, (4*6) - for other variables, Total = 68
   times = 16;
   
+  printf("BUBBLE SORT\n");
   printf("Enter limit: ");
   scanf("%d", &limit);
   times++;

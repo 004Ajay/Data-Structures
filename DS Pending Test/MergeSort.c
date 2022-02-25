@@ -34,6 +34,7 @@ void MergeSort(int a[], int i, int j){
 
 int main(){
  int a[30], limit, i;
+ printf("MERGE SORT\n");
  printf("Enter limit: ");
  scanf("%d", &limit);
  

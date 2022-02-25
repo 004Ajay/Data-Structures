@@ -32,6 +32,7 @@ void QuickSort(int arr[10], int first, int last){
 int main(){
    int i, limit, arr[10];
 
+   printf("QUICK SORT\n");
    printf("Enter limit: ");
    scanf("%d", &limit);
 

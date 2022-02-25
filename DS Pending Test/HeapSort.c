@@ -47,6 +47,7 @@
 int main() {
     int arr[30], limit, i;
 
+    printf("HEAP SORT\n");
     printf("Enter limit: ");
     scanf("%d", &limit);
  

@@ -6,6 +6,7 @@ int main(){
   space = 68; //(4*10) - for array, (4*7) - for other variables, Total = 68 
   times = 17;
 
+  printf("SELECTION SORT\n");
   printf("Enter limit: ");
   scanf("%d", &limit);
   times++;

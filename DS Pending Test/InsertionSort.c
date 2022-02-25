@@ -4,6 +4,7 @@
 int main(){
   int array[10], limit, i, j, temp, flag = 0;
 
+  printf("INSERTION SORT\n");
   printf("Enter limit: ");
   scanf("%d", &limit);
 
