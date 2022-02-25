@@ -29,14 +29,12 @@ if(isFull()){
    exit(0);
 }
 else{
-   printf("ENQUEUE selected\n");
    printf("Enter element to be added: ");
    scanf("%d", &element); //Reading element
    if(front == -1) 
       front = 0;
    rear = (rear + 1) % size; //Incrementing rear
-   array[rear] = element; //Adding element to circular queue 
-   printf("\nItem Inserted\n");
+   array[rear] = element; //Adding element to circular queue
     }
 }
 
@@ -54,7 +52,6 @@ if (isEmpty()) {
       front = (front + 1) % size;
     }
     printf("\nPopped element:  %d", element);
-    printf("\nItem Deleted\n"); 
   }
 }
 
