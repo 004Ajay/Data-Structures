@@ -3,14 +3,14 @@
 #include<stdio.h>
 
 int main(){
-int array[10], limit, key, result, i, low, high, mid, space = 0, times = 0; //space = (10 * 4) for array and (9 * 4 = 36) for other declarations
+int array[50], limit, key, result, i, low, high, mid, space = 0, times = 0; //space = (10 * 4) for array and (9 * 4 = 36) for other declarations
 char choice; //1 space
 times += 10;
 space = 77; //space = (10 * 4) + (9 * 4 = 36) + 1
 
 do{
 //getting array size
-printf("Enter array limit(max 10): ");
+printf("Enter array limit: ");
 scanf("%d", &limit);
 times++;
 
@@ -62,13 +62,10 @@ times ++; //for while loop
      printf("Element %d is not found on the list\n", key);
 times += 2;  
 }
-
+times += 5;// for running or failing of do while loop
+printf("\nTime complexity is  %d\n", times);
+printf("Space complexity is  %d\n", space);
 printf("\nEnter Your Choice \nFor SEARCHING Type s \nFor EXIT, press any letter\nChoice: ");
 scanf(" %c", &choice);
-times += 3;// for running or failing of do while loop
 }while(choice == 'S' || choice == 's');
-
-times += 2; //for next printfs
-printf("Exited!\nTime complexity is  %d\n", times);
-printf("Space complexity is  %d\n", space);
 }

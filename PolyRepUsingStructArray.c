@@ -16,7 +16,7 @@ int main(){
    printf("Enter the highest degree of polynomial: ");
    scanf("%d",&degree1);        
    
-   printf("\nEnter Coefficients of Polynomial\n");
+   printf("\nEnter Polynomial\n");
    for(i=0; i <= degree1; i++){   //getting polynomial 1 terms from the user
        printf("\nEnter the exponent: ");
        scanf("%d", &a[i].exponent); //entering values in coefficient of the polynomial terms
@@ -25,7 +25,7 @@ int main(){
    }
 
    //printing the polynomial
-   printf("\nexpression = %dx^%d", a[0].coefficient, a[0].exponent);
+   printf("\nExpression = %dx^%d", a[0].coefficient, a[0].exponent);
    for(i=1; i <= degree1; i++){
        printf(" + %dx^%d", a[i].coefficient, a[i].exponent);
    }        
