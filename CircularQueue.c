@@ -66,7 +66,6 @@ if(isEmpty()){
    exit(0);
 }
 else{
-printf("DISPLAY selected\n");
 printf("\nQueue element(s): ");   
 for(i = front; i != rear; i = (i + 1) % size){
    printf("%d ", array[i]); //showing the circular queue elements

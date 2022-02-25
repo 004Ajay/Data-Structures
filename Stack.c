@@ -23,7 +23,6 @@ else
 
 void push(){
 //The process of putting a new element on the stack is know as push operation
-printf("PUSH selected\n");
 int element;
 if(isFull()){
    printf("Stack is full.\nProgram terminated!");
@@ -39,7 +38,6 @@ else{
 
 void pop(){
 //The process of taking out an element from the stack is know as pop operation
-printf("POP selected\n");
 if(isEmpty()){
    printf("Stack is Empty.\nProgram terminated!");
    exit(0); //exits the program, if stack is empty
@@ -52,7 +50,6 @@ else{
 
 void display(){
 //To display stack elements
-printf("DISPLAY selected\n");
 if(isEmpty()){
    printf("Stack is Empty.\nProgram terminated!");
    exit(0); //exits the program, if stack is empty

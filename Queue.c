@@ -23,7 +23,6 @@ else
 
 void ENQUEUE(){
 //The process add an item of data to a queue
-printf("ENQUEUE selected\n");
 int element;
 if(isFull()){
    printf("Queue is full.\nProgram terminated!");
@@ -39,7 +38,6 @@ else{
 
 void DEQUEUE(){
 //The process of taking out an element from the front is know as DEQUEUE operation
-printf("DEQUEUE selected\n");
 if(isEmpty()){
    printf("Queue is Empty.\nProgram terminated!");
    exit(0);
@@ -52,7 +50,6 @@ else{
 
 void DISPLAY(){
 //To display Queue elements
-printf("DISPLAY selected\n");
 if(isEmpty()){
    printf("Queue is Empty.\nProgram terminated!");
    exit(0);
