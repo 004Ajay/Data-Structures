@@ -57,7 +57,7 @@ for(i=0; word[i] != '\0'; i++){
     push(word[i]);
 }
 
-printf("Reversed Elements: ");
+printf("Reversed word: ");
 while(top != -1) pop();
 return 0;
 }
