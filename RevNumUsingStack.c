@@ -70,13 +70,15 @@ printf("Enter elements: ");
 for(i=0; i<limit; i++)
     scanf("%d", &input[i]);
 
-for(i=0; i<limit; i++)
+for(i=0; i<limit; i++){
+    printf("Pushed %d to Stack\n", input[i]);
     push(input[i]);
+}
 
 printf("Reversed Elements: ");
 while(top != -1){
       pop(); 
-      printf("\t");
+      printf("  ");
 }
 return 0;
 }

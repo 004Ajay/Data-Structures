@@ -69,6 +69,7 @@ int i = 0, j = 0;
 char item, operator;
 
 push('('); //Pushing '(' onto stack
+
 strcat(InfixExpression, ")"); //Adding ')' to end of Infix expression
 
 item = InfixExpression[i]; //initializing before loop
