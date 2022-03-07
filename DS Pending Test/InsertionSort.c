@@ -10,8 +10,7 @@ int main(){
 
   printf("Enter %d integers: ", limit);
 
-  for(i = 0; i < limit; i++)
-    scanf("%d", &array[i]);
+  for(i = 0; i < limit; i++) scanf("%d", &array[i]);
 
   for(i = 1; i <= (limit - 1); i++) {
     temp = array[i];
@@ -27,9 +26,7 @@ int main(){
 
   printf("Sorted list: ");
 
-  for (i = 0; i <= (limit - 1); i++) {
-    printf("%d  ", array[i]);
-  }
+  for (i = 0; i <= (limit - 1); i++) printf("%d  ", array[i]);
 
   return 0;
 }

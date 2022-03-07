@@ -1,7 +1,6 @@
 //C Program to implement Heap Sort
 
 #include <stdio.h>  
-
 void heapify(int a[], int n, int i){  
     int largest = i; 
     int left = 2 * i + 1;
@@ -51,6 +50,5 @@ int main() {
     heapSort(arr, limit);
 
     printf("\nSorted array is :");
-    for(i = 0; i < limit; i++)
-    printf("%d ", arr[i]);  
+    for(i = 0; i < limit; i++) printf("%d ", arr[i]);  
   }

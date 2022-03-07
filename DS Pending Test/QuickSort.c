@@ -1,7 +1,6 @@
 //C Program to implement Quick Sort
 
 #include<stdio.h>
-
 void QuickSort(int arr[10], int first, int last){
    int i, j, pivot, temp;
 
@@ -37,13 +36,11 @@ int main(){
    scanf("%d", &limit);
 
    printf("Enter %d elements: ", limit);
-   for(i = 0; i < limit; i++)
-      scanf("%d", &arr[i]);
+   for(i = 0; i < limit; i++) scanf("%d", &arr[i]);
 
    QuickSort(arr, 0, limit-1);
 
    printf("Sorted list: ");
-   for(i = 0; i < limit; i++)
-      printf(" %d  ",arr[i]);
+   for(i = 0; i < limit; i++) printf(" %d  ",arr[i]);
 
 }

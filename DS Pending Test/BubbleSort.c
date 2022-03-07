@@ -19,7 +19,7 @@ int main(){
     }
   for(i = 0; i < (limit - 1); i++){
     for (j = 0; j < (limit - i - 1); j++){
-      if(arr[j] > arr[j+1]){
+      if(arr[j] > arr[j+1]){ //if an element is greater than the next element, then sawp
         temp = arr[j];
         arr[j] = arr[j+1];
         arr[j+1] = temp;
