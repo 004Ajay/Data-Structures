@@ -8,26 +8,66 @@ Types of DS are Arrays, Stacks, Queue, LinkedList, Trees, Heaps, Hash Tables & G
 
 ---
 
-### List of Programs in this repository with their Links:
+#### The repository items are separated wrt to it's DS & alphabetically arranged.
 
-[Binary Search](https://github.com/004Ajay/Data-Structures/blob/main/BinarySearch.c)
+---
+## ARRAYS
 
-[Stack Operations](https://github.com/004Ajay/Data-Structures/blob/main/Stack.c)
+[Binary Search Using Function](https://github.com/004Ajay/Data-Structures/blob/main/BinarySearchUsingFunction.c) 
 
-[Queue Operations](https://github.com/004Ajay/Data-Structures/blob/main/Queue.c)
+[Binary Search With Complexities](https://github.com/004Ajay/Data-Structures/blob/main/BinarySearchWithComplexities.c) 
 
-[Reverse Using Stack](https://github.com/004Ajay/Data-Structures/blob/main/ReverseUsingStack.c)
+[Bubble Sort](https://github.com/004Ajay/Data-Structures/blob/main/BubbleSort.c) 
 
-[Linked List Operations](https://github.com/004Ajay/Data-Structures/blob/main/LinkedList.c)
+[Heap Sort](https://github.com/004Ajay/Data-Structures/blob/main/HeapSort.c) 
 
-[Circular Queue Operations](https://github.com/004Ajay/Data-Structures/blob/main/CircularQueue.c)
+[Infix to Postfix](https://github.com/004Ajay/Data-Structures/blob/main/InfixToPostfix.c) 
 
-[Evaluation Of Postfix Expression](https://github.com/004Ajay/Data-Structures/blob/main/EvaluationOfPostfixExpression.c)
+[Insertion Sort](https://github.com/004Ajay/Data-Structures/blob/main/InsertionSort.c) 
 
-[Infix Expression To Postfix Expression](https://github.com/004Ajay/Data-Structures/blob/main/InfixToPostfix.c)
+[Linear Search Using Function](https://github.com/004Ajay/Data-Structures/blob/main/LinearSearchUsingFunction.c) 
 
+[Linear Search With Complexities](https://github.com/004Ajay/Data-Structures/blob/main/LinearSearchWithComplexities.c) 
 
+[Merge Sort](https://github.com/004Ajay/Data-Structures/blob/main/MergeSort.c) 
 
+[Poly Representation Using Structure & Array](https://github.com/004Ajay/Data-Structures/blob/main/PolyRepUsingStructArray.c) 
 
+[Quick Sort](https://github.com/004Ajay/Data-Structures/blob/main/QuickSort.c) 
 
+[Selection Sort](https://github.com/004Ajay/Data-Structures/blob/main/SelectionSort.c) 
 
+---
+## STACKS
+
+[Evaluation of Postfix Expression](https://github.com/004Ajay/Data-Structures/blob/main/EvaluationOfPostfixExpression.c) 
+
+[Reversing number using Stack](https://github.com/004Ajay/Data-Structures/blob/main/RevNumUsingStack.c) 
+
+[Reversing string using Stack](https://github.com/004Ajay/Data-Structures/blob/main/RevStringUsingStack.c) 
+
+[Stack](https://github.com/004Ajay/Data-Structures/blob/main/Stack.c) 
+
+---
+
+## QUEUE
+
+[Circular Queue](https://github.com/004Ajay/Data-Structures/blob/main/CircularQueue.c) 
+
+[Queue](https://github.com/004Ajay/Data-Structures/blob/main/Queue.c) 
+
+---
+
+## LINKEDLIST
+
+[LinkedList](https://github.com/004Ajay/Data-Structures/blob/main/LinkedList.c) 
+
+[Polynomial Addition using LinkedList](https://github.com/004Ajay/Data-Structures/blob/main/PolyAddUsingLinkedList.c) 
+
+---
+
+## MISCELLANEOUS
+
+[Sparse Matrix](https://github.com/004Ajay/Data-Structures/blob/main/SparseMatrix.c) 
+
+---
